@@ -6,7 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Me</title>
     <link rel="stylesheet" href="style.css">
-    <script src="contact-validation.js" defer></script> <!-- Link to the JavaScript validation file -->
+  <form action="thankyou.html" method="get" name="myContact" onsubmit="return validateForm()">
+    <style>
+      h2 {text-align: center;}
+      section {text-align: center;}
+      footer {text-align: center;}
+    </style>
+    <script src="contact-validation.js" defer></script> 
 </head>
 <body>
     <header>
@@ -21,14 +27,14 @@
             <li><a href="artifacts.html">Artifacts</a></li>
             <li><a href="modules.html">Modules</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="creative.html">[Creative Page Name]</a></li>
+            <li><a href="creative.html">YouTube</a></li>
             <li><a href="validated.html">Validated</a></li>
         </ul>
     </nav>
 
     <main>
         <section>
-            <h2>Get in Touch</h2>
+            <h2>Need to tell me something?</h2>
             <form action="thankyou.html" method="get" name="myContact" onsubmit="return validateForm()">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -48,7 +54,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
+        <p>&copy; 2025 Jeremy Morrell. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
