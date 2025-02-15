@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta name="description" content="Week 6 - BC - Rhombus">
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rhombus Generator</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <h1>Jeremy Morrell</h1>
-
 
   <label>How big do you want the Rhombus?</label><br>
   <input type="text" id="rHeight" value="5" size="5" required><br>
@@ -39,15 +40,18 @@
     document.getElementById('colorOdd').value,
     document.getElementById('symbol').value
   );">Generate Rhombus!</button>
+
+ 
+  <div class="rhombus-container">
+    <div id="upLeft" class="rhombus-section"></div>
+    <div id="upRight" class="rhombus-section"></div>
+    <div id="downLeft" class="rhombus-section"></div>
+    <div id="downRight" class="rhombus-section"></div>
+  </div>
   
 
-  <div id="upLeft"></div>
-  <div id="upRight"></div>
-  <div id="downLeft"></div>
-  <div id="downRight"></div>
-  
- 
   <script src="rhombus.js"></script>
 </body>
 </html>
+
 
