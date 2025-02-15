@@ -1,17 +1,16 @@
-.rhombus-grid {
-  display: grid;
-  grid-template-columns: auto auto; 
-  gap: 0; 
+
+.rhombus-container {
+  display: flex;
+  flex-direction: row;
   justify-content: center; 
 }
 
-.rhombus-section {
-  display: inline-block;
-  margin: 5px;
-  font-family: monospace; 
+#upRight, #downRight {
+  font-family: monospace;
+  text-align: left;
+  margin: 0 5px;
   white-space: pre; 
 }
-
 
 body {
   text-align: center;
@@ -21,4 +20,5 @@ body {
 h1 {
   margin-bottom: 20px;
 }
+
 
