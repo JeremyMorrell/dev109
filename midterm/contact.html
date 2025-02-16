@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Me</title>
-   <link rel="stylesheet" href="./css/style.css">
-<style>
-      h2 {text-align: center;}
-      section {text-align: center;}
-      footer {text-align: center;}
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        h2 { text-align: center; }
+        section { text-align: center; }
+        footer { text-align: center; }
     </style>
-  <form action="thankyou.html" method="get" name="myContact" onsubmit="return validateForm()">
-   
     <script src="contact-validation.js" defer></script> 
-
-
+</head>
+<body>
     <header>
         <h1>Contact Me</h1>
     </header>
@@ -32,11 +30,11 @@
             <li><a href="validated.html">Validated</a></li>
         </ul>
     </nav>
-</form> 
-   <main>     
+
+    <main>
         <section>
             <h2 style="font-size: 200%">Need to tell me something?</h2>
-           
+            <form action="thankyou.html" method="get" name="myContact" onsubmit="return validateForm()">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 <br>
@@ -50,14 +48,15 @@
                 <br>
 
                 <button type="submit">Submit</button>
-   
+            </form>
         </section>
-   </main>
+    </main>
 
     <footer>
         <p>&copy; 2025 Jeremy Morrell - All Rights Reserved.</p>
     </footer>
 </body>
 </html>
+
 
 
