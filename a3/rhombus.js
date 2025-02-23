@@ -5,68 +5,69 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
     downRight(pHeight, pColorEven, pColorOdd, pSymbol);
 }
 
-function upLeft(pHeight, pColorEven, pColorOdd, pSymbol){
-    var rLine = "";
-    for (i = 0; i < pHeight; i++) {
+function upLeft(pHeight, pColorEven, pColorOdd, pSymbol) {
+    let rLine = "";
+    for (let i = 0; i < pHeight; i++) {
         rLine += "<p>";
-        for (j = pHeight; j > i; j--) {
+        for (let j = pHeight - 1; j > i; j--) {
             rLine += "&nbsp;"; 
         }
-        for (j = 0; j <= i; j++) {
-            if (j % 2) 
-                rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
-            else 
+        for (let j = 0; j <= i; j++) {
+            if (j % 2 == 0) 
                 rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
+            else 
+                rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
         }
         rLine += "</p>";
     }
     document.getElementById("upLeft").innerHTML = rLine;
 }
 
-function downLeft(pHeight, pColorEven, pColorOdd, pSymbol){
-    var rLine = "";
-    for (i = pHeight; i > 0; i--) {
+function downLeft(pHeight, pColorEven, pColorOdd, pSymbol) {
+    let rLine = "";
+    for (let i = pHeight - 1; i >= 0; i--) {
         rLine += "<p>";
-        for (j = pHeight; j >= i; j--) {
+        for (let j = pHeight - 1; j > i; j--) {
             rLine += "&nbsp;"; 
         }
-        for (j = 0; j < i; j++) {
-            if (j % 2) 
-                rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
-            else 
+        for (let j = 0; j <= i; j++) {
+            if (j % 2 == 0) 
                 rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
+            else 
+                rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
         }
         rLine += "</p>";
     }
     document.getElementById("downLeft").innerHTML = rLine;
 }
 
-function upRight(pHeight, pColorEven, pColorOdd, pSymbol){
-    var rLine = "";
-    for (i = 0; i < pHeight; i++) {
+function upRight(pHeight, pColorEven, pColorOdd, pSymbol) {
+    let rLine = "";
+    for (let i = 0; i < pHeight; i++) {
         rLine += "<p>";
-        for (j = 0; j <= i; j++) {
-            if (j % 2) 
-                rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
-            else 
+        for (let j = 0; j <= i; j++) {
+            if (j % 2 == 0) 
                 rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
+            else 
+                rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
         }
         rLine += "</p>";
     }
     document.getElementById("upRight").innerHTML = rLine;
 }
 
-function downRight(pHeight, pColorEven, pColorOdd, pSymbol){
-    var rLine = "";
-    for (i = pHeight; i > 0; i--) {
+function downRight(pHeight, pColorEven, pColorOdd, pSymbol) {
+    let rLine = "";
+    for (let i = pHeight - 1; i >= 0; i--) {
         rLine += "<p>";
-        for (j = 0; j < i; j++) {
-            if (j % 2) 
-                rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
-            else 
+        for (let j = 0; j <= i; j++) {
+            if (j % 2 == 0) 
                 rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
+            else 
+                rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
         }
         rLine += "</p>";
     }
     document.getElementById("downRight").innerHTML = rLine;
 }
+
