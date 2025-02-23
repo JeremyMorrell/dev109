@@ -1,3 +1,5 @@
+alert('JavaScript is working!');
+
 function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
     upLeft(pHeight, pColorEven, pColorOdd, pSymbol);
     upRight(pHeight, pColorEven, pColorOdd, pSymbol);
