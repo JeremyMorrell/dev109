@@ -7,17 +7,15 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
 
 function upLeft(pHeight, pColorEven, pColorOdd, pSymbol){
     var rLine = "";
-    for (i=0;i<pHeight;i++){
+    for (i = 0; i < pHeight; i++) {
         rLine += "<p>";
-        
-        for(j=pHeight;j>i;j--){
-            rLine += "&nbsp;&nbsp;"; 
+        for (j = pHeight; j > i; j--) {
+            rLine += "&nbsp;"; 
         }
-      
-        for(j=0;j<=i;j++){
-            if (j%2)
+        for (j = 0; j <= i; j++) {
+            if (j % 2) 
                 rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
-            else
+            else 
                 rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
         }
         rLine += "</p>";
@@ -27,17 +25,15 @@ function upLeft(pHeight, pColorEven, pColorOdd, pSymbol){
 
 function downLeft(pHeight, pColorEven, pColorOdd, pSymbol){
     var rLine = "";
-    for (i=pHeight;i > 0;i--){
+    for (i = pHeight; i > 0; i--) {
         rLine += "<p>";
-        
-        for(j=pHeight;j>=i;j--){
-            rLine += "&nbsp;&nbsp;"; 
+        for (j = pHeight; j >= i; j--) {
+            rLine += "&nbsp;"; 
         }
-
-        for(j=0;j<i;j++){
-            if (j%2)
+        for (j = 0; j < i; j++) {
+            if (j % 2) 
                 rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
-            else
+            else 
                 rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
         }
         rLine += "</p>";
@@ -47,13 +43,12 @@ function downLeft(pHeight, pColorEven, pColorOdd, pSymbol){
 
 function upRight(pHeight, pColorEven, pColorOdd, pSymbol){
     var rLine = "";
-    for (i=0;i<pHeight;i++){
+    for (i = 0; i < pHeight; i++) {
         rLine += "<p>";
-       
-        for(j=0;j<=i;j++){
-            if (j%2)
+        for (j = 0; j <= i; j++) {
+            if (j % 2) 
                 rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
-            else
+            else 
                 rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
         }
         rLine += "</p>";
@@ -63,13 +58,12 @@ function upRight(pHeight, pColorEven, pColorOdd, pSymbol){
 
 function downRight(pHeight, pColorEven, pColorOdd, pSymbol){
     var rLine = "";
-    for (i=pHeight;i > 0;i--){
+    for (i = pHeight; i > 0; i--) {
         rLine += "<p>";
-
-        for(j=0;j<i;j++){
-            if (j%2)
+        for (j = 0; j < i; j++) {
+            if (j % 2) 
                 rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
-            else
+            else 
                 rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
         }
         rLine += "</p>";
