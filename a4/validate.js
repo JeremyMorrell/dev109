@@ -1,13 +1,12 @@
 function isValid() {
-    let valid = true; 
-    let errorMessages = ""; 
-
+    let valid = true;
+    let errorMessages = "";
 
     const firstName = document.getElementById("FirstName").value;
     if (firstName === "" || firstName === null || firstName.length > 20 || !/^[A-Za-z]+$/.test(firstName)) {
         errorMessages = "First name is required and must be alphabetic, with a maximum of 20 characters.";
         document.getElementById("fname").innerHTML = errorMessages;
-        valid = false; 
+        valid = false;
     } else {
         document.getElementById("fname").innerHTML = "";
     }
@@ -21,6 +20,16 @@ function isValid() {
         document.getElementById("lname").innerHTML = "";
     }
 
+    const email = document.getElementById("Email").value;
+    const atPos = email.indexOf("@");
+    const dotPos = email.lastIndexOf(".");
+    if (email === "" || atPos < 1 || dotPos < atPos + 2 || dotPos + 2 >= email.length) {
+        errorMessages = "Please enter a valid email address.";
+        document.getElementById("email").innerHTML = errorMessages;
+        valid = false;
+    } else {
+        document.getElementById("email").innerHTML = "";
+    }
     return valid;
 }
 
