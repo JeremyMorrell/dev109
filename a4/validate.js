@@ -50,7 +50,7 @@ function isValid() {
     }
 
     const password = document.getElementById("Password").value;
-    if (password === "" || password.length > 7 || !/(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[\W_])/.test(password)) {
+    if (password === "" || password.length > 7) {
         errorMessages = "Password must be 7 characters long, with at least one uppercase, lowercase, number, and special character.";
         document.getElementById("password").innerHTML = errorMessages;
         valid = false;
