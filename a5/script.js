@@ -6,7 +6,7 @@ var myImages = [
     "./images/IMG_1994.JPG"
 ];
 
-var captionImages = ["Laugh", "Love", "Lunch", "Happiness", "Family"];
+var captionImages = ["Flo's", "Ramones", "Sunset", "Star Wars", "Space"];
 
 var index = 0;
 
