@@ -17,3 +17,17 @@ function validateForm() {
     return true; 
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const audio = document.getElementById('background-music');
+    
+    // Autoplay music
+    audio.autoplay = true;
+
+    // Loop the audio
+    audio.loop = true;
+
+    // Play the audio when the page loads
+    audio.play();
+});
+
+
