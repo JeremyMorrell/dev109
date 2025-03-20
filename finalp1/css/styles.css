@@ -1,7 +1,21 @@
-img.Picture of me.JPG {
+img. {
     max-width: 100%; /* Ensure image is responsive and fits the container */
     height: auto; /* Maintain the aspect ratio */
     width: 250px; /* You can adjust the width as needed */
     border-radius: 8px; /* Optional: adds rounded corners to the image */
     display: block; /* Centers the image if needed */
     margin: 0 auto; /* Centers the image horizontally */
+
+    /* Style for the audio player */
+.audio-player {
+    text-align: center;
+    margin-top: 20px; /* Space between the audio player and the content */
+}
+
+/* Optionally hide the default controls (if you plan to use custom JS) */
+#audio-player {
+    width: 100%;
+    max-width: 300px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
